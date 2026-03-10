@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.name {
+  font-size: 64px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ffffff, #e8e6e3, #999);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.role {
+  font-size: 36px;
+  font-weight: 600;
+  background: linear-gradient(to right, #d4b896, #b8956a);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.description {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.primaryBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: linear-gradient(to right, #d4b896, #b8956a);
+  color: #0d0d0d;
+  transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  transform: scale(1.05);
+}
+
+.secondaryBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 28px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 184, 150, 0.2);
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  transform: scale(1.05);
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  width: 80%;
+  border-radius: 24px;
+  object-fit: cover;
+  transition: transform 0.3s linear;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.gradient1,
+.gradient2,
+.gradient3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.gradient1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(212, 184, 150, 0.2);
+  top: 50px;
+  left: -50px;
+}
+
+.gradient2 {
+  width: 400px;
+  height: 400px;
+  background: rgba(184, 149, 106, 0.2);
+  bottom: 50px;
+  right: -50px;
+}
+
+.gradient3 {
+  width: 600px;
+  height: 600px;
+  background: rgba(201, 169, 117, 0.1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

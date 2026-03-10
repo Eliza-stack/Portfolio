@@ -1,0 +1,73 @@
+.wrapper {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 20px;
+  filter: blur(14px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.wrapper:hover .glow {
+  opacity: 0.45;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  padding: 26px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.wrapper:hover .card {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  display: inline-flex;
+  padding: 14px;
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.iconSvg {
+  color: white;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.value {
+  font-size: 14px;
+  color: #9ca3af;
+  word-break: break-all;
+}
+
+.gold {
+  background: linear-gradient(90deg, #d4b896, #c9a975);
+}
+
+.bronze {
+  background: linear-gradient(90deg, #c9a975, #b8956a);
+}
+
+.brown {
+  background: linear-gradient(90deg, #b8956a, #a67c52);
+}

@@ -1,0 +1,54 @@
+.resume {
+  position: relative;
+  padding: 120px 24px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.gridBackground {
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+
+  background-size: 50px 50px;
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(to bottom, #d4b896, #c9a975, #b8956a);
+}
+
+.subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
