@@ -36,7 +36,6 @@ export const Hero = () => {
           className={styles.content}
         >
           <div>
-            
             <h1 className={styles.name}>Eliza Atanbaeva</h1>
             <h2 className={styles.role}>Frontend-разработчик</h2>
 
@@ -52,11 +51,12 @@ export const Hero = () => {
               <Briefcase size={20} />
               Посмотреть проекты
             </a>
-
-            <Button variant='outline'>
-              <Download size={20} />
-              Скачать резюме
-            </Button>
+            <a href='#resume'>
+              <Button variant='outline'>
+                <Download size={20} />
+                Скачать резюме
+              </Button>
+            </a>
           </div>
         </motion.div>
 
