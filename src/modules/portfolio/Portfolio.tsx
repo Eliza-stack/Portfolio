@@ -5,7 +5,7 @@ import { ProjectCard, SmallProjectCard  } from '@ui/index';
 export function Portfolio() {
   return (
     <section id="portfolio" className={styles.portfolio}>
-      <h2 className={styles.title}>Featured Work</h2>
+      <h2 className={styles.title}>Проекты</h2>
 
       <div className={styles.projects}>
         {featuredProjects.map((project) => (
@@ -13,7 +13,7 @@ export function Portfolio() {
         ))}
       </div>
 
-      <h3 className={styles.smallTitle}>Small Projects</h3>
+      <h3 className={styles.smallTitle}>Маленькие проекты</h3>
 
       <div className={styles.smallProjects}>
         {smallProjects.map((project) => (
