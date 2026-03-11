@@ -33,7 +33,7 @@ export const ContactCard = ({
 
       <div className={styles.card}>
         <div className={clsx(styles.icon, styles[variant])}>
-          <Icon size={22} className={styles.iconSvg} />
+          <Icon size={20} className={styles.iconSvg} />
         </div>
 
         <h4 className={styles.title}>{title}</h4>

@@ -34,7 +34,7 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Palette,
     title: 'Стилизация',
-    skills: ['Sass', 'CSS Modules', 'Responsive Design', 'Antd', 'MUI'],
+    skills: ['Sass', 'CSS Modules', 'Responsive Design', 'Antd', 'MUI', 'Media Query'],
   },
   {
     icon: Database,

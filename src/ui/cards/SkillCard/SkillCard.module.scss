@@ -1,5 +1,5 @@
 .card {
-  padding: 32px;
+  padding: clamp(20px, 3vw, 32px);
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
@@ -11,24 +11,33 @@
 }
 
 .icon {
-  margin-bottom: 20px;
+  margin-bottom: clamp(12px, 2vw, 20px);
 }
 
 .title {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: clamp(10px, 2vw, 16px);
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: clamp(6px, 1vw, 8px);
 }
 
 .skills span {
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: clamp(11px, 1.2vw, 12px);
   background: rgba(212, 184, 150, 0.1);
   border-radius: 6px;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+
+  .card {
+    padding: 18px;
+  }
+
 }

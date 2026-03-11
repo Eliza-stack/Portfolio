@@ -2,10 +2,11 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 22px;
+  padding: clamp(10px, 2vw, 12px) clamp(16px, 3vw, 22px);
   border-radius: 12px;
   border: none;
-  font-size: 15px;
+  font-size: clamp(13px, 1.5vw, 15px);
+  white-space: nowrap;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -14,6 +15,7 @@
 .icon {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .primary {
@@ -44,4 +46,13 @@
 
 .ghost:hover {
   background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 480px) {
+
+  .button {
+    padding: 10px 16px;
+    gap: 8px;
+  }
+
 }

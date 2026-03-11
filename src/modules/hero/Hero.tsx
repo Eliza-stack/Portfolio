@@ -47,9 +47,8 @@ export const Hero = () => {
           </div>
 
           <div className={styles.buttons}>
-            <a href='#portfolio' className={styles.primaryBtn}>
-              <Briefcase size={20} />
-              Посмотреть проекты
+            <a href='#portfolio'>
+              <Button variant='primary'> <Briefcase size={20} />Посмотреть проекты</Button>
             </a>
             <a href='#resume'>
               <Button variant='outline'>

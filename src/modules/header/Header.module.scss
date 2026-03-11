@@ -17,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  gap: 16px;
 }
 
 .logo {
@@ -38,11 +39,12 @@
 
 .logoText {
   font-weight: 600;
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 .nav {
   display: flex;
-  gap: 32px;
+  gap: clamp(20px, 3vw, 32px);
 }
 
 .navLink {
@@ -86,6 +88,8 @@
 .mobileBtn {
   display: none;
   padding: 8px;
+  min-width: 40px;
+  min-height: 40px;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(212, 184, 150, 0.2);
@@ -139,12 +143,22 @@
     display: none;
   }
 
+  .logoText {
+    display: none;
+  }
+
   .mobileBtn {
     display: block;
   }
 
   .mobileMenu {
     display: block;
+     width: 100%;
     padding: 16px 0;
+  }
+
+  .mobileNav {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }

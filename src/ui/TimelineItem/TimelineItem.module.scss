@@ -1,24 +1,25 @@
 .item {
   position: relative;
-  padding-left: 40px;
+  padding-left: clamp(28px, 4vw, 40px);
 }
 
 .dot {
+.dot {
   position: absolute;
-  left: -1px;
+  left: 12px; 
   top: 6px;
-  width: 24px;
-  height: 24px;
+  width: clamp(16px, 3vw, 24px);
+  height: clamp(16px, 3vw, 24px);
   border-radius: 50%;
   background: linear-gradient(45deg, #d4b896, #b8956a);
-
   border: 4px solid #0d0d0d;
-
   box-shadow: 0 0 15px rgba(212, 184, 150, 0.6);
+  transform: translateX(-50%);
+}
 }
 
 .card {
-  padding: 24px;
+  padding: clamp(18px, 3vw, 24px);
   border-radius: 20px;
   background: linear-gradient(
     145deg,
@@ -42,11 +43,12 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .header h4 {
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
 }
 
@@ -56,18 +58,20 @@
 }
 
 .period {
-  font-size: 13px;
-  justify-content: center;
+  font-size: clamp(11px, 1.5vw, 13px);
   display: flex;
   align-items: center;
-  padding: 5px 14px;
+  padding: 5px 12px;
   border-radius: 999px;
   background: rgba(184, 149, 106, 0.1);
   border: 1px solid rgba(184, 149, 106, 0.25);
   color: #b8956a;
+  white-space: nowrap;
 }
 
+
 .description {
+  font-size: clamp(14px, 1.6vw, 16px);
   margin-top: 10px;
   margin-bottom: 16px;
   color: #9ca3af;
@@ -76,12 +80,25 @@
 .achievements {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: clamp(6px, 1.2vw, 8px);
 }
 
 .achievement {
   display: flex;
   gap: 8px;
-  font-size: 14px;
+  font-size: clamp(13px, 1.4vw, 14px);
   color: #d1d5db;
+}
+
+@media (max-width: 480px) {
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .period {
+    margin-top: 4px;
+  }
+
 }
