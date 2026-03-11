@@ -3,7 +3,7 @@ import portfolioImg from '@/assets/images/portfolio.jpg';
 import Image from 'next/image';
 import { Download, Briefcase } from 'lucide-react';
 import styles from './Hero.module.scss';
-import { Button } from '@/ui/Button/Button';
+import { Button } from '@ui/index';
 
 export const Hero = () => {
   return (
